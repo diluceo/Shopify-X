@@ -276,6 +276,21 @@
 /***************************
 ********** PADDING *********
 ****************************/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/***************************
+********** PADDING *********
+****************************/
 .p-xlarge {
   padding: 10em;
 }
@@ -850,10 +865,6 @@ p,
 .page-width {
   max-width: 1100px;
   margin: auto;
-}
-
-.text-center {
-  text-align: center;
 }
 
 figure {
