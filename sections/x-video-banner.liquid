@@ -1,8 +1,8 @@
 <div id="shopx-video-banner-{{ section.id }}" class="container p-med test" style="background-color: {{ section.settings.background_color }};">
-  <div class="content-con" style="color: {{ section.settings.text_color }};"> 
-    <h1>{{ section.settings.heading }}</h1>
-    {% render 'text-block' %}
-    {% render 'text-block', text_tag: "h1", text_content: section.settings.heading %}
+  <div class="content-con">
+    {%- if section.settings.heading -%}<h1 style="color: {{ section.settings.text_color }};">{{ section.settings.heading }}</h1>{%- endif -%}
+    {%- if section.settings.content -%}<p style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
+    {%- if section.settings.button_url -%} <a class="btn shopx-btn" href="{{section.settings.button_url}}">{{section.settings.button_text}}</a> {%- endif -%}
   </div>
 
   {%- if section.settings.show_vid or section.settings.bg_image != blank -%}
@@ -35,6 +35,23 @@
       "id": "heading",
       "label": "Heading",
       "default": "Lorem Ipsum"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content",
+      "default": "Lorem Ipsum dolor ipusm lorem ipsum dolor."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Button"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
     },
     {
       "type": "checkbox",
