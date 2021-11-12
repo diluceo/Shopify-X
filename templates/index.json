@@ -4,12 +4,15 @@
       "type": "x-video-banner",
       "settings": {
         "heading": "Lorem Ipsumi",
+        "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+        "button_text": "Button",
+        "button_url": "#",
         "show_vid": true,
-        "bg_opacity": 0.8,
+        "bg_opacity": 0.3,
         "vid_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0608\/4778\/4170\/files\/workoutvideo.mp4?v=1636685510",
         "bg_image": "shopify:\/\/shop_images\/abstract.jpg",
-        "text_color": "#334fb4",
-        "background_color": "#630606"
+        "text_color": "#121212",
+        "background_color": "#ffffff"
       }
     },
     "image_banner": {
