@@ -2,16 +2,23 @@
     #shopx-content-slider-{{ section.id }} .con {
       border: 5px solid cyan;
     }
+    #shopx-content-slider-{{ section.id }} .content-image {
+      height: 60%;
+    }
+    #shopx-content-slider-{{ section.id }} .content-caption {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   </style>
 
-<div id="shopx-content-slider-{{ section.id }}" class="container {{ section.settings.content_position }} test" style="background-color: {{ section.settings.background_color }}; min-height:{{ section.settings.min_height }};">
+<div id="shopx-content-slider-{{ section.id }}" class="container {{ section.settings.content_position }} test" style="background-color: {{ section.settings.background_color }}; height:{{ section.settings.min_height }};">
 
-  <div class="content-con flex">
-    <div class="con p-med flex-50">
-      <div class="con-text" style="border: 1px solid red;">
+  <div class="content-con height-100 flex">
+    <div class="con p-med height-100 flex-50">
+      <div class="con-text flex flex-center flex-col height-100 text-center" style="border: 1px solid red;">
         {% assign content_image = section.settings.content_image %}
-        {%- if section.settings.content_image -%} <figure>{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
-        {%- if section.settings.content -%}<p style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
+        {%- if section.settings.content_image -%} <figure class="content-image">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
+        {%- if section.settings.content -%}<p class="content-caption" style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
         {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
       </div>
     </div>
@@ -66,6 +73,13 @@
     {
       "type": "header",
       "content": "Section Settings"
+    },
+    {
+      "type": "text",
+      "id": "min_height",
+      "label": "Section Height",
+      "default": "70vh",
+      "info": "use px, em, %, vh"
     },
     {
       "type": "color",
