@@ -9,7 +9,7 @@
   <div class="content-con flex">
     <div class="con p-med flex-50">
       <div class="con-text" style="border: 1px solid red;">
-        {% render 'image-block', bg_image: content_image %}
+        {%- if section.settings.content_image -%}{% render 'image-block', bg_image: content_image %}{%- endif -%}
         {%- if section.settings.content -%}<p style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
         {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
          <h2>Con 1</h2> 
