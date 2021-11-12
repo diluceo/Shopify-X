@@ -7,7 +7,9 @@
         "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
         "button_text_1": "Button",
         "button_url_1": "#",
-        "slider_image": "shopify:\/\/shop_images\/guy-tbt-new-big-bag-banner.png"
+        "slider_image": "shopify:\/\/shop_images\/guy-tbt-new-big-bag-banner.png",
+        "background_color": "#f9ca02",
+        "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
       }
     },
     "1636667260c0eb1511": {
