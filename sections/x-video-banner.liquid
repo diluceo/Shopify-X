@@ -10,10 +10,9 @@
             <source src="{{section.settings.vid_url}}" type="video/mp4">
           </video>
         {%- else -%}
-          <div class="bgimage" style="opacity: {{section.settings.bg_opacity}};">
-            {% assign my_img = section.settings.bg_image %}
+            {% assign bg_image = section.settings.bg_image %}
+            <!-- {% render 'image-block' %} -->
             {% render 'image-block', bg_image: bg_image %}
-          </div>
         {%- endif -%}
     </div>
   {%- endif -%}
