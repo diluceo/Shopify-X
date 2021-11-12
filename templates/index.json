@@ -20,6 +20,12 @@
         "background_color": "#121212"
       }
     },
+    "1636746994c5ad6cb1": {
+      "type": "x-content-slider",
+      "settings": {
+        "heading": "Lorem Ipsum"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -207,6 +213,7 @@
   },
   "order": [
     "1636667260c0eb1511",
+    "1636746994c5ad6cb1",
     "image_banner",
     "rich_text",
     "featured_products",
