@@ -1,5 +1,5 @@
-<div id="shopx-video-banner-{{ section.id }}" class="container p-med test">
-  <div class="content-con"> 
+<div id="shopx-video-banner-{{ section.id }}" class="container p-med test" style="background-color: {{ section.settings.background_color }};">
+  <div class="content-con" style="color: {{ section.settings.text_color }};"> 
     <h1>{{ section.settings.heading }}</h1>
     {% render 'text-block' %}
     {% render 'text-block', text_tag: "h1", text_content: section.settings.heading %}
