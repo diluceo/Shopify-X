@@ -850,12 +850,20 @@ figure img {
      object-fit: contain;
 }
 
+#bgvideo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .bgimage {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  height: 100%;
   width: 100%;
+  inset: 0;
 }
 
 .bgimage img {

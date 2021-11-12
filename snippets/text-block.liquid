@@ -1,0 +1,5 @@
+{%- if text_class != blank -%}
+  <{{text_tag | default: "p"}} class="{{text_class}}">{{ text_content | default: "Hello World!"}}</{{text_tag | default: "p"}}>
+{%- else -%}
+  <{{text_tag | default: "p"}}>{{ text_content | default: "Hello World!"}}</{{text_tag | default: "p"}}>
+{%- endif -%}
