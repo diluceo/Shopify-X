@@ -4,8 +4,8 @@
     {%- if section.settings.content -%}<p style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
     {%- if section.settings.button_url_1 or section.settings.button_url_2 -%}
     <div class="button_group">
-    <a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a> 
-    <a class="btn shopx-btn" href="{{section.settings.button_url_2}}">{{section.settings.button_text_2}}</a> 
+      {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
+      {%- if section.settings.button_url_2 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_2}}">{{section.settings.button_text_2}}</a>{%- endif -%}
     </div>
     {%- endif -%}
   </div>
