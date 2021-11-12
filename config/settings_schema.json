@@ -8,6 +8,25 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Shopify X - Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main Colors"
+      },
+      {
+        "type": "color",
+        "id": "shopx_color_1",
+        "default": "#333333"
+      },
+      {
+        "type": "color",
+        "id": "shopx_color_2",
+        "default": "#efefef"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
