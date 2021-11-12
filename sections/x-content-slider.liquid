@@ -9,13 +9,17 @@
   <div class="content-con flex">
     <div class="con p-med flex-50">
       <div class="con-text" style="border: 1px solid red;">
-        {%- if section.settings.content_image -%}{% render 'image-block', bg_image: content_image %}{%- endif -%}
+        {% assign content_image = section.settings.content_image %}
+        {%- if section.settings.content_image -%} <figure>{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
         {%- if section.settings.content -%}<p style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
         {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
          <h2>Con 1</h2> 
       </div>
     </div>
-    <div class="con flex-50"> <h2>Con 2</h2> </div>
+    <div class="con flex-50">
+      {% assign slider_image = section.settings.slider_image %}
+      {%- if section.settings.content_image -%} <figure>{% render 'image-block', bg_image: slider_image %}</figure>
+    </div>
   </div>
 
 </div>
@@ -47,6 +51,11 @@
       "type": "url",
       "id": "button_url_1",
       "label": "Button URL 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "slider_image",
+      "label": "Content Image"
     }
   ],
   "presets": [

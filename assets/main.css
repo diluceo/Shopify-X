@@ -842,7 +842,7 @@ p,
 
 .section,
 .container,
-.col {
+.col, .con-text {
   position: relative;
 }
 
@@ -868,6 +868,7 @@ p,
 }
 
 figure {
+  margin: 0;
   width: 100%;
   height: 100%;
 }

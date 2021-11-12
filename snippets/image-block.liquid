@@ -1,4 +1,3 @@
-<!-- {%- if bg_image != blank -%} -->
 <img srcset="
   {%- if bg_image.width >= 375 -%}{{ bg_image | img_url: '375x' }} 375w,{%- endif -%}
   {%- if bg_image.width >= 750 -%}{{ bg_image | img_url: '750x' }} 750w,{%- endif -%}
@@ -14,8 +13,5 @@ sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ setting
 alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
 loading="lazy"
 width="{{ bg_image.width }}"
-height="{{ bg_image.height }}"
+height="auto"
 >
-<!-- {%- else -%}
-  {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-{%- endif -%} -->
