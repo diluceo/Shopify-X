@@ -3,7 +3,10 @@
     "1636746994c5ad6cb1": {
       "type": "x-content-slider",
       "settings": {
-        "heading": "Heading"
+        "content_image": "shopify:\/\/shop_images\/sobig.png",
+        "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+        "button_text_1": "Button",
+        "button_url_1": ""
       }
     },
     "1636667260c0eb1511": {
