@@ -840,6 +840,11 @@ p,
   max-height: 100%;
 }
 
+.shopx-btn {
+  background-color: var(--shopx-color1);
+  color: var(--shopx-color2);
+}
+
 .section,
 .container,
 .col {

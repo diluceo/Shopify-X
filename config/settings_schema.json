@@ -17,11 +17,13 @@
       {
         "type": "color",
         "id": "shopx_color_1",
+        "label": "Color 1",
         "default": "#333333"
       },
       {
         "type": "color",
         "id": "shopx_color_2",
+        "label": "Color 2",
         "default": "#efefef"
       }
     ]
