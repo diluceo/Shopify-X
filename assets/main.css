@@ -840,11 +840,6 @@ p,
   max-height: 100%;
 }
 
-.shopx-btn {
-  background-color: var(--shopx-color1);
-  color: var(--shopx-color2);
-}
-
 .section,
 .container,
 .col {
@@ -908,18 +903,13 @@ figure img {
      object-fit: cover;
 }
 
-.custom-btn {
-  background-color: orangered;
-  color: #fff;
-  font-weight: bold;
-  border: 2px solid orangered;
-  border-radius: 15px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.button_group {
+  padding-top: 10px;
 }
 
-.custom-btn:hover {
-  background-color: #fff;
-  color: orangered;
+.shopx-btn {
+  background-color: var(--shopx-color1);
+  color: var(--shopx-color2);
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
