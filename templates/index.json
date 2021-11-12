@@ -1,5 +1,11 @@
 {
   "sections": {
+    "1636746994c5ad6cb1": {
+      "type": "x-content-slider",
+      "settings": {
+        "heading": "Heading"
+      }
+    },
     "1636667260c0eb1511": {
       "type": "x-video-banner",
       "settings": {
@@ -18,12 +24,6 @@
         "min_height": "400px",
         "text_color": "#ffffff",
         "background_color": "#121212"
-      }
-    },
-    "1636746994c5ad6cb1": {
-      "type": "x-content-slider",
-      "settings": {
-        "heading": "Heading"
       }
     },
     "image_banner": {
@@ -212,8 +212,8 @@
     }
   },
   "order": [
-    "1636667260c0eb1511",
     "1636746994c5ad6cb1",
+    "1636667260c0eb1511",
     "image_banner",
     "rich_text",
     "featured_products",
