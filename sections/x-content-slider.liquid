@@ -1,0 +1,24 @@
+<div id="shopx-content-slider-{{ section.id }}" class="container p-med flex {{ section.settings.content_position }} test" style="background-color: {{ section.settings.background_color }}; min-height:{{ section.settings.min_height }};">
+
+</div>
+
+{% schema %}
+{
+  "name": "ShopX - Content Slider",
+  "tag": "section",
+  "class": "section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Lorem Ipsum"
+    }
+  ],
+  "presets": [
+    {
+      "name":"ShopX - Content Slider"
+    }
+  ]
+}
+{% endschema %}
