@@ -3,7 +3,10 @@
     "1636667260c0eb1511": {
       "type": "x-video-banner",
       "settings": {
-        "heading": "Lorem Ipsumm"
+        "heading": "Lorem Ipsumm",
+        "show_vid": false,
+        "vid_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0608\/4778\/4170\/files\/workoutvideo.mp4?v=1636685510",
+        "bg_image": "shopify:\/\/shop_images\/abstract.jpg"
       }
     },
     "image_banner": {
