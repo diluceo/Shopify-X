@@ -1,4 +1,4 @@
-<div id="shopx-video-banner-{{ section.id }}" class="container p-med test" style="background-color: {{ section.settings.background_color }};">
+<div id="shopx-video-banner-{{ section.id }}" class="container p-med flex {{ section.settings.content_position }} test" style="background-color: {{ section.settings.background_color }}; min-height:{{ section.settings.min_height }};">
   <div class="content-con">
     {%- if section.settings.heading -%}<h1 style="color: {{ section.settings.text_color }};">{{ section.settings.heading }}</h1>{%- endif -%}
     {%- if section.settings.content -%}<p style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
@@ -81,6 +81,48 @@
     {
       "type": "header",
       "content": "Section Settings"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content Position",
+      "options": [
+        {
+          "value": "flex-center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-center-right",
+          "label": "Center Right"
+        },
+        {
+          "value": "flex-center-left",
+          "label": "Center Left"
+        },
+        {
+          "value": "flex-top-right",
+          "label": "Top Right"
+        },
+        {
+          "value": "flex-top-left",
+          "label": "Top Left"
+        },
+        {
+          "value": "flex-bottom-right",
+          "label": "Bottom Right"
+        },
+        {
+          "value": "flex-bottom-left",
+          "label": "Bottom Left"
+        }
+      ],
+      "default": "flex-center"
+    },
+    {
+      "type": "text",
+      "id": "min_height",
+      "label": "Min Height",
+      "default": "400px"
     },
     {
       "type": "color",
