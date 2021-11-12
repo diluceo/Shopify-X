@@ -18,7 +18,7 @@
     </div>
     <div class="con flex-50">
       {% assign slider_image = section.settings.slider_image %}
-      {%- if section.settings.content_image -%} <figure>{% render 'image-block', bg_image: slider_image %}</figure>
+      {%- if section.settings.slider_image -%} <figure>{% render 'image-block', bg_image: slider_image %}</figure>{%- endif -%}
     </div>
   </div>
 
