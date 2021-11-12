@@ -1,5 +1,23 @@
-<div id="shopx-video-banner-{{ section.id }}">
-  <h1>{{ section.settings.heading }}</h1>
+<div id="shopx-video-banner-{{ section.id }}" class="container p-med test">
+  <div class="content-con"> 
+    <h1>{{ section.settings.heading }}</h1>
+  </div>
+
+  {%- if section.settings.show_vid or section.settings.bg_image != blank -%}
+    <div class="bgimage" style="opacity: {{section.settings.bg_opacity}};">
+        {%- if section.settings.show_vid -%}
+          <video autoplay muted loop id="bgvideo">
+            <source src="{{section.settings.vid_url}}" type="video/mp4">
+          </video>
+        {%- else -%}
+          <div class="bgimage" style="opacity: {{section.settings.bg_opacity}};">
+            {% assign my_img = section.settings.bg_image %}
+            {% render 'image-block', bg_image: bg_image %}
+          </div>
+        {%- endif -%}
+    </div>
+  {%- endif -%}
+
 </div>
 
 {% schema %}
@@ -13,6 +31,21 @@
       "id": "heading",
       "label": "Heading",
       "default": "Lorem Ipsum"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vid",
+      "label": "Show Video"
+    },
+    {
+      "type": "url",
+      "id": "vid_url",
+      "label": "Video Url"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
     }
   ],
   "presets": [

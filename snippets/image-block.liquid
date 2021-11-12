@@ -1,0 +1,17 @@
+<img srcset="
+  {%- if bg_image.width >= 375 -%}{{ bg_image | img_url: '375x' }} 375w,{%- endif -%}
+  {%- if bg_image.width >= 750 -%}{{ bg_image | img_url: '750x' }} 750w,{%- endif -%}
+  {%- if bg_image.width >= 1100 -%}{{ bg_image | img_url: '1100x' }} 1100w,{%- endif -%}
+  {%- if bg_image.width >= 1500 -%}{{ bg_image | img_url: '1500x' }} 1500w,{%- endif -%}
+  {%- if bg_image.width >= 1780 -%}{{ bg_image | img_url: '1780x' }} 1780w,{%- endif -%}
+  {%- if bg_image.width >= 2000 -%}{{ bg_image | img_url: '2000x' }} 2000w,{%- endif -%}
+  {%- if bg_image.width >= 3000 -%}{{ bg_image | img_url: '3000x' }} 3000w,{%- endif -%}
+  {%- if bg_image.width >= 3840 -%}{{ bg_image | img_url: '3840x' }} 3840w,{%- endif -%}
+  {{ bg_image | img_url: 'master' }} {{ bg_image.width }}w"
+src="{{ bg_image | img_url: '1920x' }}"
+sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
+alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
+loading="lazy"
+width="{{ bg_image.width }}"
+height="{{ bg_image.height }}"
+>

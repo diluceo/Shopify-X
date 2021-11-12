@@ -305,6 +305,7 @@ h5,
 h6,
 p,
 .btn {
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -352,64 +353,8 @@ p,
   }
 }
 
-#local-header {
-  padding: 10px;
-  background-color: #efefef;
-  margin-bottom: 20px;
-}
-
-#local-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#local-header li {
-  position: relative;
-}
-
-#local-header li:not(:last-child):after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12px;
-  right: 0;
-  height: 20px;
-  width: 1px;
-  background-color: #333;
-}
-
-#local-header a {
-  display: block;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 10px 20px;
-}
-
-#local-header a:hover {
-  color: orchid;
-}
-
-#local-header a.active {
-  color: orchid;
-}
-
-section {
-  padding: 10px 0;
-}
-
-.container {
-  background-color: aliceblue;
-}
-
-.local {
-  background-color: transparent;
-  text-align: center;
+.test {
+  border: 2px solid red;
 }
 
 .hero-1 {
@@ -860,10 +805,6 @@ section {
 
 .nav-1 .logo img {
   max-height: 100%;
-}
-
-section {
-  padding-bottom: 20px;
 }
 
 .section,
