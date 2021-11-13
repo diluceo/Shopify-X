@@ -64,12 +64,12 @@
     <div class="con p-med height-100 flex-50 slider-content">
       <div class="con-text flex flex-center flex-col height-100 text-center" style="border: 1px solid red;">
         {% assign content_image = section.settings.content_image %}
-        {%- if section.settings.content_image -%} <figure class="content-image" style="padding:{{section.settings.content_image_pad}};">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
+        {%- if section.settings.content_image -%} <figure class="content-image">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
         {%- if section.settings.content -%}<p class="content-caption" style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
         {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
       </div>
     </div>
-    <div class="slider-image">{% render 'image-block', bg_image: section.settings.slider_image %}</div>
+    <div class="slider-image" style="padding:{{section.settings.content_image_pad}};">{% render 'image-block', bg_image: section.settings.slider_image %}</div>
     <!-- <div class="con height-100 flex-50">
       {% assign slider_image = section.settings.slider_image %}
       {%- if section.settings.slider_image -%}<figure class="slider-image">{% render 'image-block', bg_image: slider_image %}</figure>{%- endif -%}
@@ -131,8 +131,8 @@
     },
     {
       "type": "text",
-      "id": "content_image_pad",
-      "label": "Content Image Padding",
+      "id": "slider_image_pad",
+      "label": "Slider Image Padding",
       "default": "0",
       "info": "use px, em, %, vh"
     },
