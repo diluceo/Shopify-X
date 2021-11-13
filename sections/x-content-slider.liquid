@@ -48,6 +48,12 @@
         position: absolute;
         height: 60%;
         bottom: 0;
+        overflow: hidden;
+      }
+      #shopx-content-slider-{{ section.id }} .slider-image img {
+        height: 100%;
+        width: auto;
+        margin-top: 60px;
       }
     }
   </style>
@@ -58,7 +64,7 @@
     <div class="con p-med height-100 flex-50 slider-content">
       <div class="con-text flex flex-center flex-col height-100 text-center" style="border: 1px solid red;">
         {% assign content_image = section.settings.content_image %}
-        {%- if section.settings.content_image -%} <figure class="content-image">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
+        {%- if section.settings.content_image -%} <figure class="content-image" style="padding:{{section.settings.content_image_pad}};">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
         {%- if section.settings.content -%}<p class="content-caption" style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
         {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
       </div>
@@ -121,6 +127,13 @@
       "id": "min_height",
       "label": "Section Height",
       "default": "70vh",
+      "info": "use px, em, %, vh"
+    },
+    {
+      "type": "text",
+      "id": "content_image_pad",
+      "label": "Content Image Padding",
+      "default": "0",
       "info": "use px, em, %, vh"
     },
     {
