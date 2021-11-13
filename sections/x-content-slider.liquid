@@ -69,7 +69,7 @@
         {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
       </div>
     </div>
-    <div class="slider-image" style="padding:{{section.settings.content_image_pad}};">{% render 'image-block', bg_image: section.settings.slider_image %}</div>
+    <div class="slider-image" style="padding:{{section.settings.slider_image_pad}};">{% render 'image-block', bg_image: section.settings.slider_image %}</div>
     <!-- <div class="con height-100 flex-50">
       {% assign slider_image = section.settings.slider_image %}
       {%- if section.settings.slider_image -%}<figure class="slider-image">{% render 'image-block', bg_image: slider_image %}</figure>{%- endif -%}
