@@ -2,16 +2,26 @@
   "sections": {
     "1636746994c5ad6cb1": {
       "type": "x-content-slider",
+      "blocks": {
+        "20268a9e-4353-49fb-a0e3-3dccd09522f2": {
+          "type": "slider",
+          "settings": {
+            "content_image": "shopify:\/\/shop_images\/sobig.png",
+            "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "button_text_1": "Button",
+            "button_url_1": "#",
+            "slider_image": "shopify:\/\/shop_images\/peppermint.png",
+            "slider_image_pad": "0",
+            "background_color": "",
+            "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "20268a9e-4353-49fb-a0e3-3dccd09522f2"
+      ],
       "settings": {
-        "content_image": "shopify:\/\/shop_images\/sobig.png",
-        "content": "20% OFF ON THE <br>NEW 1LB BAGS",
-        "button_text_1": "Button",
-        "button_url_1": "#",
-        "slider_image": "shopify:\/\/shop_images\/peppermint.png",
-        "min_height": "70vh",
-        "slider_image_pad": "3em",
-        "background_color": "#f9ca02",
-        "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
+        "min_height": "70vh"
       }
     },
     "1636667260c0eb1511": {
