@@ -1,29 +1,5 @@
 {
   "sections": {
-    "1636746994c5ad6cb1": {
-      "type": "x-content-slider",
-      "blocks": {
-        "20268a9e-4353-49fb-a0e3-3dccd09522f2": {
-          "type": "slider",
-          "settings": {
-            "content_image": "shopify:\/\/shop_images\/sobig.png",
-            "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
-            "button_text_1": "Button",
-            "button_url_1": "#",
-            "slider_image": "shopify:\/\/shop_images\/peppermint.png",
-            "slider_image_pad": "0",
-            "background_color": "",
-            "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "20268a9e-4353-49fb-a0e3-3dccd09522f2"
-      ],
-      "settings": {
-        "min_height": "70vh"
-      }
-    },
     "1636667260c0eb1511": {
       "type": "x-video-banner",
       "settings": {
@@ -230,7 +206,6 @@
     }
   },
   "order": [
-    "1636746994c5ad6cb1",
     "1636667260c0eb1511",
     "image_banner",
     "rich_text",
