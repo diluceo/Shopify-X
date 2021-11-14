@@ -1,11 +1,5 @@
 {
   "sections": {
-    "16369303425508522d": {
-      "type": "x-content-slider",
-      "settings": {
-        "min_height": "70vh"
-      }
-    },
     "1636667260c0eb1511": {
       "type": "x-video-banner",
       "settings": {
@@ -212,7 +206,6 @@
     }
   },
   "order": [
-    "16369303425508522d",
     "1636667260c0eb1511",
     "image_banner",
     "rich_text",
