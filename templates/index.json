@@ -8,7 +8,7 @@
           "settings": {
             "content_image": "shopify:\/\/shop_images\/sobig.png",
             "content_desc": "20% OFF ON THE<br> NEW 1LB BAGS",
-            "desc_size": "",
+            "desc_size": "large",
             "content": "For a limited time only!",
             "content_size": "",
             "button_text_1": "Get Yours",
