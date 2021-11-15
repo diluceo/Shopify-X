@@ -70,7 +70,7 @@
             <div class="container {{ block.settings.content_position }}" style="background-color: {{ block.settings.background_color }}; overflow:hidden;">
               <div class="content-con height-100">
                 <div class="con p-med height-100 flex-50 slider-content">
-                  <div class="con-text flex flex-center flex-col height-100 text-center" style="border: 1px solid red;">
+                  <div class="con-text flex flex-center flex-col height-100 text-center">
                     {% assign content_image = block.settings.content_image %}
                     {%- if block.settings.content_image -%} <figure class="content-image">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
                     {%- if block.settings.content -%}<p class="content-caption" style="color: {{ block.settings.text_color }};">{{ block.settings.content }}</p>{%- endif -%}
