@@ -64,7 +64,7 @@
 		<ul class="splide__list">
       {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'x_slider' -%}
+        {%- when 'slider' -%}
         <li class="splide__slide">
           <div class="{{ block.settings.content_position }} test" style="background-color: {{ block.settings.background_color }};">
 
@@ -111,8 +111,8 @@
   ],
   "blocks" : [
     {
-      "type": "x_slider",
-      "name": "x_slider",
+      "type": "slider",
+      "name": "Slider",
       "limit": 6,
       "settings": [
         {
