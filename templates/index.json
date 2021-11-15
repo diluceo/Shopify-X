@@ -14,10 +14,21 @@
             "slider_image_pad": "0",
             "background_color": "#e6a60e"
           }
+        },
+        "2073dc3e-3080-4484-b7c9-4222e5a62e35": {
+          "type": "x_slider",
+          "settings": {
+            "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "button_text_1": "Button",
+            "button_url_1": "",
+            "slider_image_pad": "0",
+            "background_color": ""
+          }
         }
       },
       "block_order": [
-        "63b92972-8205-4651-9c85-15b1c74e766b"
+        "63b92972-8205-4651-9c85-15b1c74e766b",
+        "2073dc3e-3080-4484-b7c9-4222e5a62e35"
       ],
       "settings": {
         "min_height": "70vh"
