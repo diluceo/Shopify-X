@@ -1,9 +1,9 @@
   <style>
     #shopx-content-slider-{{ section.id }} .con {
-      border: 5px solid cyan;
+      /* border: 5px solid cyan; */
     }
     #shopx-content-slider-{{ section.id }} .content-image {
-      height: 60%;
+      height: 53%;
     }
     #shopx-content-slider-{{ section.id }} .content-caption {
       margin-top: 20px;
@@ -30,7 +30,7 @@
     }
 
     @media (max-width: 767px) {
-      #shopx-content-slider-{{ section.id }} {
+      #shopx-content-slider-{{ section.id }} .splide__list{
         height: 90vh!important;
       }
       #shopx-content-slider-{{ section.id }} .slider-image, 
@@ -67,7 +67,7 @@
         {%- case block.type -%}
           {%- when 'x_slider' -%}
           <li class="splide__slide">
-            <div class="container {{ block.settings.content_position }} test" style="background-color: {{ block.settings.background_color }}; overflow:hidden;">
+            <div class="container {{ block.settings.content_position }}" style="background-color: {{ block.settings.background_color }}; overflow:hidden;">
               <div class="content-con height-100">
                 <div class="con p-med height-100 flex-50 slider-content">
                   <div class="con-text flex flex-center flex-col height-100 text-center" style="border: 1px solid red;">
