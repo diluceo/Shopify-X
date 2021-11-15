@@ -58,42 +58,43 @@
     }
   </style>
 
-<div id="shopx-content-slider-{{ section.id }}" class="container" style="height:{{ section.settings.min_height }};">
-<div class="splide">
+<!-- <div class="splide">
   <div class="splide__track">
 		<ul class="splide__list">
-      {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'slider' -%}
-        <li class="splide__slide">
-          <div class="{{ block.settings.content_position }} test" style="background-color: {{ block.settings.background_color }};">
-
-            <div class="content-con height-100">
-              <div class="con p-med height-100 flex-50 slider-content">
-                <div class="con-text flex flex-center flex-col height-100 text-center" style="border: 1px solid red;">
-                  {% assign content_image = block.settings.content_image %}
-                  {%- if block.settings.content_image -%} <figure class="content-image">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
-                  {%- if block.settings.content -%}<p class="content-caption" style="color: {{ block.settings.text_color }};">{{ block.settings.content }}</p>{%- endif -%}
-                  {%- if block.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{block.settings.button_url_1}}">{{block.settings.button_text_1}}</a>{%- endif -%}
-                </div>
-              </div>
-              <div class="slider-image" style="padding:{{block.settings.slider_image_pad}};">{% render 'image-block', bg_image: block.settings.slider_image %}</div>
-            </div>
-
-            {%- if block.settings.bg_image != blank -%}
-            <div class="bgimage" style="opacity: {{block.settings.bg_opacity}};">
-              {% assign bg_image = block.settings.bg_image %}
-              {% render 'image-block', bg_image: bg_image %}
-            </div>
-            {%- endif -%}
-          </div>
-        </li>
-      {%- endcase -%}
-      {%- endfor -%}
+			<li class="splide__slide">Slide 01</li>
+			<li class="splide__slide">Slide 02</li>
+			<li class="splide__slide">Slide 03</li>
 		</ul>
   </div>
+</div> -->
+
+<div id="shopx-content-slider-{{ section.id }}" class="container {{ section.settings.content_position }} test" style="background-color: {{ section.settings.background_color }}; height:{{ section.settings.min_height }};">
+
+  <div class="content-con height-100">
+    <div class="con p-med height-100 flex-50 slider-content">
+      <div class="con-text flex flex-center flex-col height-100 text-center" style="border: 1px solid red;">
+        {% assign content_image = section.settings.content_image %}
+        {%- if section.settings.content_image -%} <figure class="content-image">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
+        {%- if section.settings.content -%}<p class="content-caption" style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
+        {%- if section.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{section.settings.button_url_1}}">{{section.settings.button_text_1}}</a>{%- endif -%}
+      </div>
+    </div>
+    <div class="slider-image" style="padding:{{section.settings.slider_image_pad}};">{% render 'image-block', bg_image: section.settings.slider_image %}</div>
+    <!-- <div class="con height-100 flex-50">
+      {% assign slider_image = section.settings.slider_image %}
+      {%- if section.settings.slider_image -%}<figure class="slider-image">{% render 'image-block', bg_image: slider_image %}</figure>{%- endif -%}
+    </div> -->
+  </div>
+
+  {%- if section.settings.bg_image != blank -%}
+    <div class="bgimage" style="opacity: {{section.settings.bg_opacity}};">
+      {% assign bg_image = section.settings.bg_image %}
+      {% render 'image-block', bg_image: bg_image %}
+    </div>
+  {%- endif -%}
+
 </div>
-</div>
+
 
 {% schema %}
 {
@@ -102,68 +103,59 @@
   "class": "section-wrapper",
   "settings": [
     {
+      "type": "image_picker",
+      "id": "content_image",
+      "label": "Content Image"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content",
+      "default": "Lorem Ipsum dolor ipusm lorem ipsum dolor."
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "label": "Button Text 1",
+      "default": "Button"
+    },
+    {
+      "type": "url",
+      "id": "button_url_1",
+      "label": "Button URL 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "slider_image",
+      "label": "Content Image"
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
       "type": "text",
       "id": "min_height",
       "label": "Section Height",
       "default": "70vh",
       "info": "use px, em, %, vh"
-    }
-  ],
-  "blocks" : [
+    },
     {
-      "type": "slider",
-      "name": "Slider",
-      "limit": 6,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "content_image",
-          "label": "Content Image"
-        },
-        {
-          "type": "textarea",
-          "id": "content",
-          "label": "Content",
-          "default": "Lorem Ipsum dolor ipusm lorem ipsum dolor."
-        },
-        {
-          "type": "text",
-          "id": "button_text_1",
-          "label": "Button Text 1",
-          "default": "Button"
-        },
-        {
-          "type": "url",
-          "id": "button_url_1",
-          "label": "Button URL 1"
-        },
-        {
-          "type": "image_picker",
-          "id": "slider_image",
-          "label": "Content Image"
-        },
-        {
-          "type": "header",
-          "content": "Section Settings"
-        },
-        {
-          "type": "text",
-          "id": "slider_image_pad",
-          "label": "Slider Image Padding",
-          "default": "0",
-          "info": "use px, em, %, vh"
-        },
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background Color"
-        },
-        {
-          "type": "image_picker",
-          "id": "bg_image",
-          "label": "Background Image"
-        }
-      ]
+      "type": "text",
+      "id": "slider_image_pad",
+      "label": "Slider Image Padding",
+      "default": "0",
+      "info": "use px, em, %, vh"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
     }
   ],
   "presets": [
