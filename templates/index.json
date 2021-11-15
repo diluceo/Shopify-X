@@ -12,7 +12,8 @@
             "button_url_1": "#",
             "slider_image": "shopify:\/\/shop_images\/guy-tbt-new-big-bag-banner.png",
             "slider_image_pad": "0",
-            "background_color": "#e6a60e"
+            "background_color": "#e6a60e",
+            "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
           }
         },
         "2073dc3e-3080-4484-b7c9-4222e5a62e35": {
