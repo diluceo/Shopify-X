@@ -12,8 +12,7 @@
             "button_url_1": "#",
             "slider_image": "shopify:\/\/shop_images\/peppermint.png",
             "slider_image_pad": "0",
-            "background_color": "",
-            "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
+            "background_color": "#e6a60e"
           }
         }
       },
