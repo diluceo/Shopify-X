@@ -18,11 +18,14 @@
         "2073dc3e-3080-4484-b7c9-4222e5a62e35": {
           "type": "x_slider",
           "settings": {
+            "content_image": "shopify:\/\/shop_images\/barkbannertitle.png",
             "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
             "button_text_1": "Button",
-            "button_url_1": "",
+            "button_url_1": "#",
+            "slider_image": "shopify:\/\/shop_images\/peppermint.png",
             "slider_image_pad": "0",
-            "background_color": ""
+            "background_color": "#cc1918",
+            "bg_image": "shopify:\/\/shop_images\/barkbannerbg.jpg"
           }
         }
       },
