@@ -35,7 +35,7 @@
         "2073dc3e-3080-4484-b7c9-4222e5a62e35"
       ],
       "settings": {
-        "min_height": "70vh"
+        "min_height": "calc (90vh - 85px)"
       }
     },
     "1636667260c0eb1511": {
