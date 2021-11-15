@@ -7,11 +7,15 @@
           "type": "x_slider",
           "settings": {
             "content_image": "shopify:\/\/shop_images\/sobig.png",
-            "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "content_desc": "20% OFF ON THE<br> NEW 1LB BAGS",
+            "desc_size": "",
+            "content": "For a limited time only!",
+            "content_size": "",
             "button_text_1": "Button",
             "button_url_1": "#",
             "slider_image": "shopify:\/\/shop_images\/guy-tbt-new-big-bag-banner.png",
             "slider_image_pad": "0",
+            "text_color": "",
             "background_color": "#e6a60e",
             "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
           }
@@ -20,11 +24,15 @@
           "type": "x_slider",
           "settings": {
             "content_image": "shopify:\/\/shop_images\/barkbannertitle.png",
+            "content_desc": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "desc_size": "",
             "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "content_size": "",
             "button_text_1": "Button",
             "button_url_1": "#",
             "slider_image": "shopify:\/\/shop_images\/peppermint.png",
             "slider_image_pad": "3em",
+            "text_color": "",
             "background_color": "#cc1918",
             "bg_image": "shopify:\/\/shop_images\/barkbannerbg.jpg"
           }
