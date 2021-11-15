@@ -364,44 +364,45 @@ p,
 
 .text-hero,
 .text-title,
-.text-subtitle {
+.text-subtitle,
+.title-font {
   font-family: "Barlow", Arial, sans-serif;
   line-height: 1.2em;
   font-weight: 300;
 }
 
-.text-hero {
+.text-hero, .xx-large {
   font-size: 7rem;
 }
 
-.text-title {
+.text-title, .x-large {
   font-size: 3.8rem;
 }
 
-.text-subtitle {
+.text-subtitle, .large {
   font-size: 2rem;
 }
 
-.text-main {
+.text-main, .regular {
   font-size: 16px;
 }
 
-.text-overline {
+.text-overline, .small {
   font-size: 13px;
 }
 
-.text-caption {
+.text-caption, .x-small {
   font-size: 13px;
 }
 
 @media (max-width: 768px) {
-  .text-hero {
+  .text-hero, .xx-large {
     font-size: 3.4rem;
   }
-  .text-title {
+  .text-title .x-large {
     font-size: 2.2rem;
   }
-  .text-subtitle {
+  .text-subtitle, .large {
     font-size: 1.6rem;
   }
 }

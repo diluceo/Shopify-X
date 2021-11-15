@@ -5,6 +5,7 @@
     #shopx-content-slider-{{ section.id }} .content-image {
       height: 53%;
     }
+    #shopx-content-slider-{{ section.id }} .content-desc,
     #shopx-content-slider-{{ section.id }} .content-caption {
       margin-top: 20px;
       margin-bottom: 20px;
@@ -73,7 +74,8 @@
                   <div class="con-text flex flex-center flex-col height-100 text-center">
                     {% assign content_image = block.settings.content_image %}
                     {%- if block.settings.content_image -%} <figure class="content-image">{% render 'image-block', bg_image: content_image %}</figure> {%- endif -%}
-                    {%- if block.settings.content -%}<p class="content-caption" style="color: {{ block.settings.text_color }};">{{ block.settings.content }}</p>{%- endif -%}
+                    {%- if block.settings.content_desc -%}<p class="content-desc {{block.settings.desc_size}}" style="color: {{ block.settings.text_color }};">{{ block.settings.content_desc }}</p>{%- endif -%}
+                    {%- if block.settings.content -%}<p class="content-caption {{block.settings.content_size}}" style="color: {{ block.settings.text_color }};">{{ block.settings.content }}</p>{%- endif -%}
                     {%- if block.settings.button_url_1 -%}<a class="btn shopx-btn" href="{{block.settings.button_url_1}}">{{block.settings.button_text_1}}</a>{%- endif -%}
                   </div>
                 </div>
@@ -91,6 +93,10 @@
           {%- endcase -%}
         {%- endfor -%}
       </ul>
+    </div>
+    <div class="splide__progress">
+      <div class="splide__progress__bar">
+      </div>
     </div>
   </div> 
 
@@ -124,9 +130,27 @@
         },
         {
           "type": "textarea",
-          "id": "content",
+          "id": "content_desc",
           "label": "Content",
           "default": "Lorem Ipsum dolor ipusm lorem ipsum dolor."
+        },
+        {
+          "type": "text",
+          "id": "desc_size",
+          "label": "Desc Font Size Class",
+          "info": "Use: x-small, small, regular, large, x-large, xx-large"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "Lorem Ipsum dolor."
+        },
+        {
+          "type": "text",
+          "id": "content_size",
+          "label": "Content Font Size Class",
+          "info": "Use: x-small, small, regular, large, x-large, xx-large"
         },
         {
           "type": "text",
@@ -154,6 +178,11 @@
           "label": "Slider Image Padding",
           "default": "0",
           "info": "use px, em, %, vh"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color"
         },
         {
           "type": "color",
