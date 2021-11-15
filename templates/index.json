@@ -1,42 +1,5 @@
 {
   "sections": {
-    "163693688809d3499b": {
-      "type": "x-content-slider-test",
-      "settings": {
-        "content_image": "shopify:\/\/shop_images\/sobig.png",
-        "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
-        "button_text_1": "Button",
-        "button_url_1": "#",
-        "slider_image": "shopify:\/\/shop_images\/peppermint.png",
-        "min_height": "70vh",
-        "background_color": "",
-        "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
-      }
-    },
-    "1636936255a33aa7fd": {
-      "type": "x-content-slider",
-      "blocks": {
-        "98872be2-e71d-43b6-9dde-d958d0abff42": {
-          "type": "slider",
-          "settings": {
-            "content_image": "shopify:\/\/shop_images\/sobig.png",
-            "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
-            "button_text_1": "Button",
-            "button_url_1": "#",
-            "slider_image": "shopify:\/\/shop_images\/peppermint.png",
-            "slider_image_pad": "0",
-            "background_color": "",
-            "bg_image": "shopify:\/\/shop_images\/background-big.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "98872be2-e71d-43b6-9dde-d958d0abff42"
-      ],
-      "settings": {
-        "min_height": "70vh"
-      }
-    },
     "1636667260c0eb1511": {
       "type": "x-video-banner",
       "settings": {
@@ -243,8 +206,6 @@
     }
   },
   "order": [
-    "163693688809d3499b",
-    "1636936255a33aa7fd",
     "1636667260c0eb1511",
     "image_banner",
     "rich_text",
