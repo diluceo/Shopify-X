@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+
+:root {
+  --base-font: "Open Sans", Arial, sans-serif;
+  --base-font-weight: 300;
+  --base-font-size: 14px;
+  --base-line-height: calc(var(--base-font-size) * 1.5);
+  --line-height: 1.5em;
+  --scale: 1.233;
+  /* Don't change the lines below, 
+  you only need to change the --scale above. */
+  --size-l-1: calc(1rem * var(--scale));
+  --size-l-2: calc(var(--size-l-1) * var(--scale));
+  --size-l-3: calc(var(--size-l-2) * var(--scale));
+  --size-l-4: calc(var(--size-l-3) * var(--scale));
+  --size-l-5: calc(var(--size-l-4) * var(--scale));
+  --size-l-6: calc(var(--size-l-5) * var(--scale));
+  --size-l-7: calc(var(--size-l-6) * var(--scale));
+  --size-s-1: calc(1rem / var(--scale));
+  --size-s-2: calc(var(--size-s-1) / var(--scale));
+  --size-s-3: calc(var(--size-s-2) / var(--scale));
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--base-font);
+  font-weight: var(--base-font-weight);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol {
+  min-height: 0vw;
+  margin-bottom: 0 0 calc(var(--base-font-size) * 1.5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  line-height: 1.1em;
+  font-family: "Barlow Condensed", Arial, sans-serif;
+}
+
+ul,
+ol {
+  -webkit-padding-start: 21px;
+  padding-inline-start: 21px;
+}
+
+h1,
+.xx-large {
+  font-size: clamp(var(--size-l-4), 3.8vw, var(--size-l-6));
+}
+
+h2,
+.x-large {
+  font-size: clamp(var(--size-l-3), 3vw, var(--size-l-5));
+}
+
+h3,
+.large {
+  font-size: clamp(var(--size-l-2), 2.5vw, var(--size-l-4));
+}
+
+h4,
+.medium {
+  font-size: clamp(var(--size-l-1), 2vw, var(--size-l-2));
+}
+
+h5,
+.small {
+  font-size: clamp(1rem, 1.5vw, var(--size-l-1));
+}
+
+p,
+ul,
+ol,
+.x-small {
+  font-size: clamp(0.9rem, 1.1em, 1.4rem);
+  line-height: clamp(1.2em, 1.6em, 1.8em);
+  font-weight: var(--base-font-weight);
+}

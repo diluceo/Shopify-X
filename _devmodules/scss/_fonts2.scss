@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.btn {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.text-hero,
+.text-title,
+.text-subtitle,
+.title-font {
+  font-family: "Barlow", Arial, sans-serif;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.text-hero, .xx-large {
+  font-size: 7rem;
+}
+
+.text-title, .x-large{
+  font-size: 3.8rem;
+}
+
+.text-subtitle, .large {
+  font-size: 2rem;
+}
+
+.text-main, .regular {
+  font-size: 16px;
+}
+
+.text-overline, .small {
+  font-size: 13px;
+}
+.text-caption, .x-small {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .text-hero, .xx-large {
+    font-size: 3.4rem;
+  }
+
+  .text-title .x-large {
+    font-size: 2.2rem;
+  }
+
+  .text-subtitle, .large {
+    font-size: 1.6rem;
+  }
+}

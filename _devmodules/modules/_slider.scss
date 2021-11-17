@@ -1,0 +1,72 @@
+.slick-slide,
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
+  perspective: 1000;
+  backface-visibility: hidden;
+}
+
+.splide__arrow {
+  height: 4em;
+  width: 4em;
+  border-radius: 0;
+}
+
+// SLIDER 01
+.slider-1 {
+  .container {
+    height: 300px;
+  }
+  .content-wrapper {
+    background-color: #fff;
+    padding: 1em;
+    width: 50%;
+  }
+  .splide__slide {
+    border: 1px solid red;
+  }
+}
+
+// SLIDER CONTENT
+.slider-content {
+  .container {
+    height: 500px;
+  }
+  .content-wrapper {
+    background-color: #fff;
+    padding: 1em;
+    height: 100%;
+  }
+  .splide__slide {
+    border: 1px solid red;
+  }
+}
+
+// TESTIMONIAL 01
+.testimonial-1 {
+  > .container {
+    padding: 0 80px;
+  }
+  .splide .container {
+    height: 300px;
+    padding: 0 2em;
+  }
+  .content-wrapper {
+    background-color: #fff;
+    padding: 1em;
+    width: 100%;
+  }
+  .splide__slide {
+    border: 1px solid red;
+  }
+
+  .splide__arrow--prev {
+    left: -60px;
+  }
+
+  .splide__arrow--next {
+    right: -60px;
+  }
+}

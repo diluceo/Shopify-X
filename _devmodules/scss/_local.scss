@@ -1,0 +1,55 @@
+#local-header {
+  padding: 10px;
+  background-color: #efefef;
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    position: relative;
+  }
+
+  li:not(:last-child):after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: 20px;
+    width: 1px;
+    background-color: #333;
+  }
+
+  a {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+
+    &:hover {
+      color: orchid;
+    }
+
+    &.active {
+      color: orchid;
+    }
+  }
+}
+
+section {
+  padding: 10px 0;
+}
+
+.container {
+  background-color: aliceblue;
+}
+
+.local {
+  background-color: transparent;
+  text-align: center;
+}

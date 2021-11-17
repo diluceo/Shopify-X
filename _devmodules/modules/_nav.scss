@@ -1,0 +1,19 @@
+.nav-1 {
+  padding: 10px;
+  background-color: palegoldenrod;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+
+  > * {
+    border: 1px solid red;
+  }
+
+  .logo {
+    height: 70px;
+    text-align: left;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}

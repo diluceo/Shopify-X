@@ -1,0 +1,98 @@
+// Imports
+// @import "scss/reset";
+@import "scss/presets";
+@import "scss/layout";
+@import "scss/fonts2";
+@import "scss/teststyles";
+// @import "scss/local";
+
+// Modules
+@import "modules/hero";
+@import "modules/slider";
+@import "modules/blocks";
+@import "modules/cards";
+@import "modules/accents";
+@import "modules/nav";
+
+section {
+  // padding-bottom: 20px;
+}
+
+.section,
+.container,
+.col, .con-text {
+  position: relative;
+}
+
+.container,
+.col,
+.image-con {
+  height: 100%;
+}
+
+.content-wrapper,
+.content-con {
+  position: relative;
+  z-index: 1;
+}
+
+.page-full {
+  width: 100%;
+}
+
+.page-width {
+  max-width: $width;
+  margin: auto;
+}
+
+figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+#bgvideo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  // top: 0;
+  // bottom: 0;
+  // right: 0;
+  object-fit: cover;
+}
+
+.bgimage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  // top: 0;
+  // bottom: 0;
+  // right: 0;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+// Customization
+
+.button_group {
+  padding-top: 10px;
+}
+
+.shopx-btn {
+  background-color: var(--shopx-color1);
+  color: var(--shopx-color2);
+  text-decoration: none;
+}
