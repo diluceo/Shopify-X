@@ -81,49 +81,49 @@
         "1637227452a56fcd7f-0": {
           "type": "highlight",
           "settings": {
-            "highlight_title": "Highlight Title",
-            "highlight_caption": "Highlight Caption",
-            "highlight_content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "highlight_title": "MATTHEW ASTORGA",
+            "highlight_caption": "MasterChef Canada 3rd Place (2016)",
+            "highlight_content": "“This toffee is as premium a snack as you can get. I can’t get over how much thought goes into each flavour! What blows my mind, though, is their chocolate, nuts, and topping choices! Each flavour is coated in premium chocolate, and the nuts and other toppings are sourced based on the geographical location of the cacao. So you can be sure what you’re eating is filled with the world’s best ingredients, sourced responsibly while supporting ethical farming! I love this toffee!”",
             "highlight_icon_1": "Highlight Icon",
             "highlight_icon_1_url": "",
             "highlight_icon_2": "Highlight Icon",
             "highlight_icon_2_url": "",
             "highlight_icon_3": "Highlight Icon",
             "highlight_icon_3_url": "",
-            "text_color": "",
-            "bg_color": ""
+            "text_color": "#ffffff",
+            "bg_color": "#d71061"
           }
         },
         "1637227452a56fcd7f-1": {
           "type": "highlight",
           "settings": {
-            "highlight_title": "Highlight Title",
-            "highlight_caption": "Highlight Caption",
-            "highlight_content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "highlight_title": "BECCY STABLES",
+            "highlight_caption": "MasterChef Canada Winner",
+            "highlight_content": "“It’s just soooo addictively gooood!!!! Amazing people with an amazing passion for toffee. They understand their customers and actually listen and change for the better!! You can get everything from classics to chai to white chocolate. I love the fact that it doesn’t break your teeth, it just kinda melts in your mouth. Unexpected!”",
             "highlight_icon_1": "Highlight Icon",
             "highlight_icon_1_url": "",
             "highlight_icon_2": "Highlight Icon",
             "highlight_icon_2_url": "",
             "highlight_icon_3": "Highlight Icon",
             "highlight_icon_3_url": "",
-            "text_color": "",
-            "bg_color": ""
+            "text_color": "#ffffff",
+            "bg_color": "#1eadc1"
           }
         },
         "1637227452a56fcd7f-2": {
           "type": "highlight",
           "settings": {
-            "highlight_title": "Highlight Title",
-            "highlight_caption": "Highlight Caption",
-            "highlight_content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "highlight_title": "SOPHEATS",
+            "highlight_caption": "Foodie Influencer",
+            "highlight_content": "“Two Brothers Toffee makes some of the most creative and tasty toffees I’ve ever had! They specialize in small batch artisan toffee that combines traditional confectionery ingredients with an unexpected twist of unique flavours. Just picture this: a classic almond toffee enveloped with creamy milk chocolate, melted marshmallows, and crushed graham crackers (Smore)… this is NEXT LEVEL TOFFEE. I love that they recommend pairings for each flavour too(for example milk toffee goes well with coffee)!”",
             "highlight_icon_1": "Highlight Icon",
             "highlight_icon_1_url": "",
             "highlight_icon_2": "Highlight Icon",
             "highlight_icon_2_url": "",
             "highlight_icon_3": "Highlight Icon",
             "highlight_icon_3_url": "",
-            "text_color": "",
-            "bg_color": ""
+            "text_color": "#ffffff",
+            "bg_color": "#f9a71f"
           }
         }
       },
