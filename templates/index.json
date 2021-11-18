@@ -66,6 +66,15 @@
         "background_color": "#121212"
       }
     },
+    "16372149288fd2f073": {
+      "type": "x-text-banner",
+      "settings": {
+        "header": "Lorem Ipsum",
+        "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+        "text_color": "#ffffff",
+        "bg_color": "#cccccc"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -249,26 +258,17 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
-    },
-    "16372149288fd2f073": {
-      "type": "x-text-banner",
-      "settings": {
-        "header": "Lorem Ipsum",
-        "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
-        "text_color": "#ffffff",
-        "bg_color": "#cccccc"
-      }
     }
   },
   "order": [
     "163696113276e5cbf7",
     "1636667260c0eb1511",
+    "16372149288fd2f073",
     "image_banner",
     "rich_text",
     "featured_products",
     "collage",
     "video",
-    "multi_column",
-    "16372149288fd2f073"
+    "multi_column"
   ]
 }
