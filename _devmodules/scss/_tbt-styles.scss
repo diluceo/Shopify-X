@@ -14,6 +14,7 @@ $border-radius: 10px !default;
 body, p {
   font-family: "Roboto", Arial, sans-serif;
   line-height: 1.6em;
+  letter-spacing: 0;
   font-weight: 400;
 }
 
@@ -23,7 +24,7 @@ body, p {
   .text-title,
   .text-subtitle {
     font-family: "Raleway", Arial, sans-serif;
-    line-height: 1.2em;
+    line-height: 1em;
     font-weight: 700;
   }
 
