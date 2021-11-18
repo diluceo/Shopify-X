@@ -1,6 +1,6 @@
-<div id="shopx-video-banner-{{ section.id }}" class="container p-med flex {{ section.settings.content_position }} test" style="background-color: {{ section.settings.background_color }}; min-height:{{ section.settings.min_height }};">
+<div id="shopx-video-banner-{{ section.id }}" class="container p-med flex {{ section.settings.content_position }}" style="background-color: {{ section.settings.background_color }}; min-height:{{ section.settings.min_height }};">
   <div class="content-con {{ section.settings.text_position }}">
-    {%- if section.settings.heading -%}<h1 style="color: {{ section.settings.text_color }};">{{ section.settings.heading }}</h1>{%- endif -%}
+    {%- if section.settings.heading -%}<p class="title-font xx-large" style="color: {{ section.settings.text_color }};">{{ section.settings.heading }}</p>{%- endif -%}
     {%- if section.settings.content -%}<p style="color: {{ section.settings.text_color }};">{{ section.settings.content }}</p>{%- endif -%}
     {%- if section.settings.button_url_1 or section.settings.button_url_2 -%}
     <div class="button_group">

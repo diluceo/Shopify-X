@@ -1,0 +1,53 @@
+<div id="shopx-text-banner-{{ section.id }}" class="container {{ section.settings.content_position }} test" style="background-color: {{ section.settings.background_color }}; height:{{ section.settings.min_height }}; background-color:#e35940;">
+  <div class="content-con page-width height-100 p-med">
+    <div class="con flex-33">
+      <h6 class="xx-large">FOODIE REVIEW</h6>
+    </div>
+    <div class="con flex-66">
+      <p class="regular">Some very special people have been trying our toffee, and loving every bite! Hear what these expert treat-tasters have to say about Two Brothers Toffee!</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ShopX - Text Banner",
+  "tag": "section",
+  "class": "section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Heading",
+      "default": "Lorem Ipsum"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content",
+      "default": "Lorem Ipsum dolor ipusm lorem ipsum dolor."
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#cccccc"
+    }
+  ],
+  "presets": [
+    {
+      "name":"ShopX - Text Banner"
+    }
+  ]
+}
+{% endschema %}
