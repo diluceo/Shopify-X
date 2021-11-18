@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
@@ -27,17 +25,6 @@ p,
   font-family: "Barlow", Arial, sans-serif;
   line-height: 1.2em;
   font-weight: 300;
-}
-
-#tbt {
-  .title-font,
-  .text-hero,
-  .text-title,
-  .text-subtitle {
-    font-family: "Raleway", Arial, sans-serif;
-    line-height: 1.2em;
-    font-weight: 700;
-  }
 }
 
 .text-hero, .xx-large {
