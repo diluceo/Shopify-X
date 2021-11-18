@@ -249,6 +249,15 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "16372149288fd2f073": {
+      "type": "x-text-banner",
+      "settings": {
+        "header": "Lorem Ipsum",
+        "content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+        "text_color": "#ffffff",
+        "bg_color": "#cccccc"
+      }
     }
   },
   "order": [
@@ -259,6 +268,7 @@
     "featured_products",
     "collage",
     "video",
-    "multi_column"
+    "multi_column",
+    "16372149288fd2f073"
   ]
 }
