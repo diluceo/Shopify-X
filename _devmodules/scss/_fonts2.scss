@@ -18,21 +18,27 @@ p,
   margin-bottom: 10px;
 }
 
+
+.title-font,
+.text-mega,
 .text-hero,
 .text-title,
-.text-subtitle,
-.title-font {
+.text-subtitle {
   font-family: "Barlow", Arial, sans-serif;
   line-height: 1.2em;
   font-weight: 300;
 }
 
-.xx-large {
+.xxx-large, .xx-large {
   line-height: 1em;
 }
 
-.text-hero, .xx-large {
+.text-mega, .xxx-large {
   font-size: 7rem;
+}
+
+.text-hero, .xx-large {
+  font-size: 5.2rem;
 }
 
 .text-title, .x-large{
@@ -40,6 +46,10 @@ p,
 }
 
 .text-subtitle, .large {
+  font-size: 2.8rem;
+}
+
+.text-heading, .medium {
   font-size: 2rem;
 }
 
@@ -54,16 +64,38 @@ p,
   font-size: 13px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 989px) {
+  
+  .text-mega, .xxx-large {
+    font-size: 5.6rem;
+  }
+
+  .text-hero, .xx-large {
+    font-size: 4.4rem;
+  }
+
+  .text-title .x-large {
+    font-size: 3.2rem;
+  }
+
+  .text-subtitle, .large {
+    font-size: 2.2rem;
+  } 
+  
+  .text-heading, .medium {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .text-mega, .xxx-large {
+    font-size: 4rem;
+  }
+
   .text-hero, .xx-large {
     font-size: 3.4rem;
   }
 
-  .text-title .x-large {
-    font-size: 2.2rem;
-  }
 
-  .text-subtitle, .large {
-    font-size: 1.6rem;
-  }
 }

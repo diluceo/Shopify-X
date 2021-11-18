@@ -114,11 +114,14 @@
     <!-- <link rel="preload" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" as="style">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/css/splide.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" as="script">
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/css/splide.min.css" rel="stylesheet">
     {{ 'main.min.css' | asset_url | stylesheet_tag }}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- {{ 'custom.min.css' | asset_url | stylesheet_tag }} -->
 
     {%- unless settings.type_body_font.system? -%}

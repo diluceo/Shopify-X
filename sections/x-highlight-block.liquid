@@ -1,0 +1,132 @@
+<div id="shopx-text-banner-{{ section.id }}" class="container">
+  <div class="content-con height-100 grid grid-auto-thirds">
+  {%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'highlight' -%}
+    <div class="con x-feature-card" style="background-color:{{block.settings.bg_color}};">
+      <div class="x-feature-card-image aspect-1">{{ 'product-1' | placeholder_svg_tag }}</div>
+      <div class="x-feature-card-content text-center-s p-small">
+        {%- if block.settings.highlight_title -%}<h6 class="title-font large" style="color:{{block.settings.text_color}};">{{block.settings.highlight_title}}</h6>{%- endif -%}
+        {%- if block.settings.highlight_caption -%}<p class="small" style="color:{{block.settings.text_color}};">{{block.settings.highlight_caption}}</p>{%- endif -%}
+        {%- if block.settings.highlight_content -%}<p class="regular" style="color:{{block.settings.text_color}};">{{block.settings.highlight_content}}</p>{%- endif -%}
+        <div class="feature-icon-block">
+          <span class="material-icons">face</span><span class="material-icons">account_circle</span>
+        </div>
+      </div>
+    </div>
+    {%- endcase -%}
+  {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ShopX - Hightlight Block",
+  "tag": "section",
+  "class": "section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Heading",
+      "default": "Lorem Ipsum"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "highlight",
+      "name": "Highlight",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "highlight_image",
+          "label": "Highlight Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "highlight_image_2",
+          "label": "Highlight Image Hover"
+        },
+        {
+          "type": "text",
+          "id": "highlight_title",
+          "label": "Highlight Title",
+          "default": "Highlight Title"
+        },
+        {
+          "type": "text",
+          "id": "highlight_caption",
+          "label": "Highlight Caption",
+          "default": "Highlight Caption"
+        },
+        {
+          "type": "textarea",
+          "id": "highlight_content",
+          "label": "Highlight Content",
+          "default": "Lorem Ipsum dolor ipusm lorem ipsum dolor."
+        },
+        {
+          "type": "text",
+          "id": "highlight_icon_1",
+          "label": "Highlight Icon 1",
+          "default": "Highlight Icon"
+        },
+        {
+          "type": "url",
+          "id": "highlight_icon_1_url",
+          "label": "Highlight Icon 1 Url"
+        },
+        {
+          "type": "text",
+          "id": "highlight_icon_2",
+          "label": "Highlight Icon 2",
+          "default": "Highlight Icon"
+        },
+        {
+          "type": "url",
+          "id": "highlight_icon_2_url",
+          "label": "Highlight Icon 2 Url"
+        },
+        {
+          "type": "text",
+          "id": "highlight_icon_3",
+          "label": "Highlight Icon 3",
+          "default": "Highlight Icon"
+        },
+        {
+          "type": "url",
+          "id": "highlight_icon_3_url",
+          "label": "Highlight Icon 3 Url"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name":"ShopX - Hightlight Block",
+      "blocks": [
+        {
+          "type": "highlight"
+        },
+        {
+          "type": "highlight"
+        },
+        {
+          "type": "highlight"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
