@@ -1,16 +1,41 @@
-<div id="shopx-text-banner-{{ section.id }}" class="container">
+<style>
+  #shopx-feature-block-{{ section.id }} .x-feature-card-image figure {
+    position: absolute;
+    inset: 0;
+  }
+  #shopx-feature-block-{{ section.id }} .hover-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+  }
+  #shopx-feature-block-{{ section.id }} .x-feature-card:hover .main-image {
+    opacity: 0;
+  }
+  #shopx-feature-block-{{ section.id }} .x-feature-card:hover .hover-image {
+    opacity: 1;
+  }
+</style>
+
+<div id="shopx-feature-block-{{ section.id }}" class="container">
   <div class="content-con height-100 grid grid-auto-thirds">
   {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'highlight' -%}
     <div class="con x-feature-card" style="background-color:{{block.settings.bg_color}};">
-      <div class="x-feature-card-image aspect-1">{{ 'product-1' | placeholder_svg_tag }}</div>
-      <div class="x-feature-card-content text-center-s p-small">
+      <div class="x-feature-card-image aspect-1" style="position: relative;">
+        {% assign bg_image = block.settings.highlight_image %}
+        {% assign bg_image_2 = block.settings.highlight_image_2 %}
+        <figure class="main-image">{% render 'image-block', bg_image: bg_image %}</figure>
+        <figure class="hover-image">{% render 'image-block', bg_image: bg_image_2 %}</figure>
+      </div>
+      <div class="x-feature-card-content text-center p-small">
         {%- if block.settings.highlight_title -%}<h6 class="title-font large" style="color:{{block.settings.text_color}};">{{block.settings.highlight_title}}</h6>{%- endif -%}
         {%- if block.settings.highlight_caption -%}<p class="small" style="color:{{block.settings.text_color}};">{{block.settings.highlight_caption}}</p>{%- endif -%}
+        <p class="small" style="color:{{block.settings.text_color}};">____</p>
         {%- if block.settings.highlight_content -%}<p class="regular" style="color:{{block.settings.text_color}};">{{block.settings.highlight_content}}</p>{%- endif -%}
-        <div class="feature-icon-block">
-          <span class="material-icons">face</span><span class="material-icons">account_circle</span>
+        <div class="feature-icon-block" style="color:{{block.settings.text_color}};">
+          <i class="lni lni-facebook-oval"></i>
+          <i class="lni lni-instagram-filled"></i>
         </div>
       </div>
     </div>
