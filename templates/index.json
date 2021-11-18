@@ -75,6 +75,67 @@
         "bg_color": "#e35940"
       }
     },
+    "1637227452d30ce218": {
+      "type": "x-highlight-block",
+      "blocks": {
+        "1637227452a56fcd7f-0": {
+          "type": "highlight",
+          "settings": {
+            "highlight_title": "Highlight Title",
+            "highlight_caption": "Highlight Caption",
+            "highlight_content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "highlight_icon_1": "Highlight Icon",
+            "highlight_icon_1_url": "",
+            "highlight_icon_2": "Highlight Icon",
+            "highlight_icon_2_url": "",
+            "highlight_icon_3": "Highlight Icon",
+            "highlight_icon_3_url": "",
+            "text_color": "",
+            "bg_color": ""
+          }
+        },
+        "1637227452a56fcd7f-1": {
+          "type": "highlight",
+          "settings": {
+            "highlight_title": "Highlight Title",
+            "highlight_caption": "Highlight Caption",
+            "highlight_content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "highlight_icon_1": "Highlight Icon",
+            "highlight_icon_1_url": "",
+            "highlight_icon_2": "Highlight Icon",
+            "highlight_icon_2_url": "",
+            "highlight_icon_3": "Highlight Icon",
+            "highlight_icon_3_url": "",
+            "text_color": "",
+            "bg_color": ""
+          }
+        },
+        "1637227452a56fcd7f-2": {
+          "type": "highlight",
+          "settings": {
+            "highlight_title": "Highlight Title",
+            "highlight_caption": "Highlight Caption",
+            "highlight_content": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
+            "highlight_icon_1": "Highlight Icon",
+            "highlight_icon_1_url": "",
+            "highlight_icon_2": "Highlight Icon",
+            "highlight_icon_2_url": "",
+            "highlight_icon_3": "Highlight Icon",
+            "highlight_icon_3_url": "",
+            "text_color": "",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637227452a56fcd7f-0",
+        "1637227452a56fcd7f-1",
+        "1637227452a56fcd7f-2"
+      ],
+      "settings": {
+        "header": "Lorem Ipsum"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -264,6 +325,7 @@
     "163696113276e5cbf7",
     "1636667260c0eb1511",
     "16372149288fd2f073",
+    "1637227452d30ce218",
     "image_banner",
     "rich_text",
     "featured_products",
