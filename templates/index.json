@@ -75,6 +75,22 @@
         "bg_color": "#e35940"
       }
     },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "collection": "adidas",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "1637227452d30ce218": {
       "type": "x-highlight-block",
       "blocks": {
@@ -210,22 +226,6 @@
         "full_width": true
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "adidas",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -327,10 +327,10 @@
     "163696113276e5cbf7",
     "1636667260c0eb1511",
     "16372149288fd2f073",
+    "featured_products",
     "1637227452d30ce218",
     "image_banner",
     "rich_text",
-    "featured_products",
     "collage",
     "video",
     "multi_column"
