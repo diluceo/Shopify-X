@@ -22,6 +22,7 @@
         },
         "2073dc3e-3080-4484-b7c9-4222e5a62e35": {
           "type": "x_slider",
+          "disabled": true,
           "settings": {
             "content_image": "shopify:\/\/shop_images\/barkbannertitle.png",
             "content_desc": "Lorem Ipsum dolor ipusm lorem ipsum dolor.",
